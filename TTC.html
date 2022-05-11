@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Line One</title>
+    <style>
+        #infoDiv{
+            position: absolute;
+            left: 800px;
+            top: 400px;
+            border-style: solid;
+            border-color: #ffcc33;;
+            font-size: x-large;
+            width: 320px;
+            text-align: center;
+        }
+
+        #name{
+            font-weight: 800;
+        }
+
+        body {
+            background-color: grey;
+        }
+
+        #container {
+            position: absolute;
+            top: 170px;
+        }
+
+        #line1KtoF {
+            position: absolute;
+            left: 529px;
+            top: 180px;
+            background-color: #ffcc33;
+            width: 25px;
+            height: 640px;
+            border-radius: 75px 75px 0px 0px;
+        }
+
+        #line1SAtoK {
+            position: absolute;
+            height: 200px;
+            width: 198px;
+            border: 25px solid #ffcc33;
+            border-top: 0px;
+            border-radius: 0px 0px 75px 75px;
+            top: 725px;
+            left: 306px;
+        }
+
+        #line1SGtoSA {
+            position: absolute;
+            left: 306px;
+            top: 650px;
+            background-color: #ffcc33;
+            width: 25px;
+            height: 100px;
+        }
+
+        #line1StoSG {
+            position: absolute;
+            left: 288.5px;
+            top: 623px;
+            background-color: #ffcc33;
+            width: 25px;
+            height: 60px;
+            transform: rotate(90deg);
+            z-index: 95;
+        }
+
+        #line1DtoS {
+            position: absolute;
+            left: 271px;
+            top: 605px;
+            background-color: #ffcc33;
+            width: 25px;
+            height: 40px;
+        }
+
+        #line1EWtoD {
+            position: absolute;
+            left: 256px;
+            top: 515px;
+            background-color: #ffcc33;
+            width: 24px;
+            height: 100px;
+            transform: rotate(340deg);
+        }
+
+        #line1SWtoEW {
+            position: absolute;
+            left: 240.2px;
+            top: 280px;
+            background-color: #ffcc33;
+            width: 25px;
+            height: 245px;
+            z-index: -1;
+        }
+
+        #line1407toSW {
+            position: absolute;
+            left: 207.5px;
+            top: 95px;
+            background-color: #ffcc33;
+            width: 25px;
+            height: 200px;
+            transform: rotate(340deg);
+            z-index: -2;
+        }
+
+        #line1Vto407 {
+            position: absolute;
+            left: 175px;
+            top: 20px;
+            background-color: #ffcc33;
+            width: 25px;
+            height: 90px;
+            border-radius: 75px 75px 0px 0px;
+            z-index: -5;
+        }
+
+
+        #finch {
+            width: 17px;
+            height: 17px;
+            background-color: white;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            border-radius: 75px 75px 75px 75px;
+            position: absolute;
+            left: 2px;
+            top: 3px;
+        }
+
+        #finchname {
+            position: absolute;
+            left: 30px;
+            top: -10px;
+            transform: rotate(330deg);
+        }
+
+        #northYorkCentre {
+            width: 17px;
+            height: 17px;
+            background-color: white;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            border-radius: 75px 75px 75px 75px;
+            position: absolute;
+            left: 2px;
+            top: 49px;
+        }
+
+        #northyorkcentrename {
+            position: absolute;
+            width: 200px;
+            left: 18px;
+            top: -3px;
+            transform: rotate(330deg);
+        }
+
+        #sheppardYonge {
+            width: 17px;
+            height: 17px;
+            background-color: #f2b8c6;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            border-radius: 75px 75px 75px 75px;
+            position: absolute;
+            left: 2px;
+            top: 98px;
+        }
+
+        #sheppardyongename {
+            position: absolute;
+            left: 18px;
+            width: 200px;
+            top: 45px;
+            transform: rotate(330deg);
+        }
+
+        #yorkMills {
+            width: 17px;
+            height: 17px;
+            background-color: white;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            border-radius: 75px 75px 75px 75px;
+            position: absolute;
+            left: 2px;
+            top: 145px;
+        }
+
+        #yorkmillsname {
+            position: absolute;
+            left: 18px;
+            width: 200px;
+            top: 92px;
+            transform: rotate(330deg);
+        }
+
+        #lawrence {
+            width: 17px;
+            height: 17px;
+            background-color: white;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            border-radius: 75px 75px 75px 75px;
+            position: absolute;
+            left: 2px;
+            top: 190px;
+        }
+
+        #lawrencename {
+            position: absolute;
+            left: 18px;
+            width: 200px;
+            top: 137px;
+            transform: rotate(330deg);
+        }
+
+        #eglinton {
+            width: 17px;
+            height: 17px;
+            background-color: white;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            border-radius: 75px 75px 75px 75px;
+            position: absolute;
+            left: 2px;
+            top: 237px;
+        }
+
+        #eglintonname {
+            position: absolute;
+            left: 18px;
+            width: 200px;
+            top: 183px;
+            transform: rotate(330deg);
+        }
+
+        #davisville {
+            width: 17px;
+            height: 17px;
+            background-color: white;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            border-radius: 75px 75px 75px 75px;
+            position: absolute;
+            left: 2px;
+            top: 285px;
+        }
+
+        #davisvillename {
+            position: absolute;
+            left: 18px;
+            width: 200px;
+            top: 232px;
+            transform: rotate(330deg);
+        }
+
+        #stClair {
+            width: 17px;
+            height: 17px;
+            background-color: white;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            border-radius: 75px 75px 75px 75px;
+            position: absolute;
+            left: 2px;
+            top: 331px;
+        }
+
+        #stclairname {
+            position: absolute;
+            left: 18px;
+            width: 200px;
+            top: 278px;
+            transform: rotate(330deg);
+        }
+
+        #summerhill {
+            width: 17px;
+            height: 17px;
+            background-color: white;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            border-radius: 75px 75px 75px 75px;
+            position: absolute;
+            left: 2px;
+            top: 380px;
+        }
+
+        #summerhillname {
+            position: absolute;
+            left: 18px;
+            width: 200px;
+            top: 327px;
+            transform: rotate(330deg);
+        }
+
+        #rosedale {
+            width: 17px;
+            height: 17px;
+            background-color: white;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            border-radius: 75px 75px 75px 75px;
+            position: absolute;
+            left: 2px;
+            top: 429px;
+        }
+
+        #rosedalename {
+            position: absolute;
+            left: 18px;
+            width: 200px;
+            top: 374px;
+            transform: rotate(330deg);
+        }
+
+        #bloorYonge {
+            width: 17px;
+            height: 17px;
+            background-color: #95F985;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            border-radius: 75px 75px 75px 75px;
+            position: absolute;
+            left: 2px;
+            top: 478px;
+        }
+
+        #blooryongename {
+            position: absolute;
+            left: 18px;
+            width: 200px;
+            top: 424px;
+            transform: rotate(330deg);
+        }
+
+        #wellesley {
+            width: 17px;
+            height: 17px;
+            background-color: white;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            border-radius: 75px 75px 75px 75px;
+            position: absolute;
+            left: 2.5px;
+            top: 527px;
+            z-index: 100;
+        }
+
+        #wellesleyname {
+            position: absolute;
+            left: 18px;
+            width: 200px;
+            top: 474px;
+            transform: rotate(330deg);
+        }
+
+        #college {
+            width: 17px;
+            height: 17px;
+            background-color: white;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            border-radius: 75px 75px 75px 75px;
+            position: absolute;
+            left: 2.5px;
+            top: 576px;
+            z-index: 100;
+        }
+
+        #collegename {
+            position: absolute;
+            left: 18px;
+            width: 200px;
+            top: 523px;
+            transform: rotate(330deg);
+        }
+
+        #dundas {
+            width: 17px;
+            height: 17px;
+            background-color: white;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            border-radius: 75px 75px 75px 75px;
+            position: absolute;
+            left: 2.5px;
+            top: 625px;
+            z-index: 100;
+        }
+
+        #dundasname {
+            position: absolute;
+            left: 18px;
+            width: 200px;
+            top: 571px;
+            transform: rotate(330deg);
+        }
+
+        #queen {
+            width: 17px;
+            height: 17px;
+            background-color: white;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            border-radius: 75px 75px 75px 75px;
+            position: absolute;
+            left: 2.5px;
+            top: 675px;
+            z-index: 100;
+        }
+
+        #queenname {
+            position: absolute;
+            left: 18px;
+            width: 200px;
+            top: 620px;
+            transform: rotate(330deg);
+        }
+
+        #king {
+            width: 17px;
+            height: 17px;
+            background-color: white;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            border-radius: 75px 75px 75px 75px;
+            position: absolute;
+            left: 185px;
+            top: 180px;
+            z-index: 300;
+        }
+
+        #kingname {
+            position: absolute;
+            left: 204px;
+            width: 200px;
+            top: 140px;
+            transform: rotate(330deg);
+        }
+
+        #union {
+            width: 17px;
+            height: 17px;
+            background-color: white;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            border-radius: 75px 75px 75px 75px;
+            position: absolute;
+            left: 90px;
+            top: 202px;
+            z-index: 200;
+        }
+
+        #unionname {
+            position: absolute;
+            left: 54px;
+            width: 200px;
+            top: 195px;
+            transform: rotate(330deg);
+        }
+
+        #stAndrew {
+            width: 17px;
+            height: 17px;
+            background-color: white;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            border-radius: 75px 75px 75px 75px;
+            position: absolute;
+            left: -8px;
+            top: 180px;
+            z-index: 200;
+        }
+
+        #standrewname {
+            position: absolute;
+            left: -90px;
+            width: 140px;
+            top: 180px;
+            transform: rotate(330deg);
+        }
+
+        #osgoode {
+            width: 17px;
+            height: 17px;
+            background-color: white;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            border-radius: 75px 75px 75px 75px;
+            position: absolute;
+            left: 2.5px;
+            top: 205px;
+            z-index: 100;
+        }
+
+        #osgoodename {
+            position: absolute;
+            left: -65px;
+            width: 140px;
+            top: 205px;
+            transform: rotate(330deg);
+        }
+
+        #stPatrick {
+            width: 17px;
+            height: 17px;
+            background-color: white;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            border-radius: 75px 75px 75px 75px;
+            position: absolute;
+            left: 2.5px;
+            top: 156px;
+            z-index: 100;
+        }
+
+        #stpatrickname {
+            position: absolute;
+            left: -70px;
+            width: 140px;
+            top: 160px;
+            transform: rotate(330deg);
+        }
+
+        #queensPark {
+            width: 17px;
+            height: 17px;
+            background-color: white;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            border-radius: 75px 75px 75px 75px;
+            position: absolute;
+            left: 2.5px;
+            top: 107px;
+            z-index: 100;
+        }
+
+        #queensparkname {
+            position: absolute;
+            left: -88px;
+            width: 140px;
+            top: 121px;
+            transform: rotate(330deg);
+        }
+
+        #museum {
+            width: 17px;
+            height: 17px;
+            background-color: white;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            border-radius: 75px 75px 75px 75px;
+            position: absolute;
+            left: 2.5px;
+            top: 58px;
+            z-index: 100;
+        }
+
+        #museumname {
+            position: absolute;
+            left: -65px;
+            width: 140px;
+            top: 60px;
+            transform: rotate(330deg);
+        }
+
+        #stGeorge {
+            width: 17px;
+            height: 17px;
+            background-color: #95F985;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            border-radius: 75px 75px 75px 75px;
+            position: absolute;
+            left: 2.5px;
+            top: 9px;
+            z-index: 100;
+        }
+
+        #stgeorgename {
+            position: absolute;
+            left: -70px;
+            width: 140px;
+            top: 20px;
+            transform: rotate(330deg);
+        }
+
+        #spadina {
+            width: 17px;
+            height: 17px;
+            background-color: #95F985;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            border-radius: 75px 75px 75px 75px;
+            position: absolute;
+            top: 35px;
+            left: 2px;
+            z-index: 100;
+        }
+
+        #spadinaname {
+            position: absolute;
+            left: -56px;
+            width: 140px;
+            top: 45px;
+            transform: rotate(240deg);
+        }
+
+        #dupont {
+            width: 17px;
+            height: 17px;
+            background-color: white;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            border-radius: 75px 75px 75px 75px;
+            position: absolute;
+            top: 2px;
+            left: 2.5px;
+            z-index: 400;
+        }
+
+        #dupontname {
+            position: absolute;
+            left: -60px;
+            width: 140px;
+            top: -2px;
+            transform: rotate(330deg);
+        }
+
+        #stClairWest {
+            width: 17px;
+            height: 17px;
+            background-color: white;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            border-radius: 75px 75px 75px 75px;
+            position: absolute;
+            top: 47px;
+            left: 2px;
+            z-index: 400;
+        }
+
+        #stclairwestname {
+            position: absolute;
+            left: -90px;
+            width: 240px;
+            top: 40px;
+            transform: rotate(350deg);
+        }
+
+        #eglintonWest {
+            width: 17px;
+            height: 17px;
+            background-color: white;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            border-radius: 75px 75px 75px 75px;
+            position: absolute;
+            top: -4px;
+            left: 2px;
+            z-index: 400;
+        }
+
+        #eglintonwestname {
+            position: absolute;
+            left: -95px;
+            width: 140px;
+            top: 2px;
+            transform: rotate(350deg);
+        }
+
+        #glencairn {
+            width: 17px;
+            height: 17px;
+            background-color: white;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            border-radius: 75px 75px 75px 75px;
+            position: absolute;
+            top: 187px;
+            left: 2px;
+        }
+
+        #glencairnname {
+            position: absolute;
+            left: -71px;
+            width: 140px;
+            top: 189px;
+            transform: rotate(330deg);
+        }
+
+        #lawrenceWest {
+            width: 17px;
+            height: 17px;
+            background-color: white;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            border-radius: 75px 75px 75px 75px;
+            position: absolute;
+            top: 138px;
+            left: 2px;
+            z-index: 400;
+        }
+
+        #lawrencewestname {
+            position: absolute;
+            left: -100px;
+            width: 140px;
+            top: 160px;
+            transform: rotate(330deg);
+        }
+
+        #yorkdale {
+            width: 17px;
+            height: 17px;
+            background-color: white;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            border-radius: 75px 75px 75px 75px;
+            position: absolute;
+            top: 92px;
+            left: 2px;
+            z-index: 400;
+        }
+
+        #yorkdalename {
+            position: absolute;
+            left: -66px;
+            width: 140px;
+            top: 94px;
+            transform: rotate(330deg);
+        }
+
+        #wilson {
+            width: 17px;
+            height: 17px;
+            background-color: white;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            border-radius: 75px 75px 75px 75px;
+            position: absolute;
+            top: 44px;
+            left: 2px;
+            z-index: 400;
+        }
+
+        #wilsonname {
+            position: absolute;
+            left: -56px;
+            width: 140px;
+            top: 40px;
+            transform: rotate(330deg);
+        }
+
+        #sheppardWest {
+            width: 17px;
+            height: 17px;
+            background-color: #91bad6;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            border-radius: 75px 75px 75px 75px;
+            position: absolute;
+            top: -1px;
+            left: 2px;
+            z-index: 400;
+        }
+
+        #sheppardwestname {
+            position: absolute;
+            left: -100px;
+            width: 140px;
+            top: 17px;
+            transform: rotate(330deg);
+        }
+
+        #downsviewPark {
+            width: 17px;
+            height: 17px;
+            background-color: #91bad6;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            border-radius: 75px 75px 75px 75px;
+            position: absolute;
+            top: 145px;
+            left: 2px;
+            z-index: 400;
+        }
+
+        #downsviewparkname {
+            position: absolute;
+            left: -117px;
+            width: 140px;
+            top: 153px;
+            transform: rotate(350deg);
+        }
+
+        #finchWest {
+            width: 17px;
+            height: 17px;
+            background-color: #91bad6;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            border-radius: 75px 75px 75px 75px;
+            position: absolute;
+            top: 100px;
+            left: 2px;
+            z-index: 400;
+        }
+
+        #finchwestname {
+            position: absolute;
+            left: -80px;
+            width: 140px;
+            top: 105px;
+            transform: rotate(350deg);
+        }
+
+        #yorkUniversity {
+            width: 17px;
+            height: 17px;
+            background-color: #91bad6;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            border-radius: 75px 75px 75px 75px;
+            position: absolute;
+            top: 55px;
+            left: 2px;
+            z-index: 400;
+        }
+
+        #yorkuniversityname {
+            position: absolute;
+            left: -107px;
+            width: 140px;
+            top: 63px;
+            transform: rotate(350deg);
+        }
+
+        #pioneerVillage {
+            width: 17px;
+            height: 17px;
+            background-color: #91bad6;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            border-radius: 75px 75px 75px 75px;
+            position: absolute;
+            top: 10px;
+            left: 2px;
+            z-index: 400;
+        }
+
+        #pioneervillagename {
+            position: absolute;
+            left: -105px;
+            width: 140px;
+            top: 20px;
+            transform: rotate(350deg);
+        }
+
+        #highway407 {
+            width: 17px;
+            height: 17px;
+            background-color: #91bad6;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            border-radius: 75px 75px 75px 75px;
+            position: absolute;
+            top: 48px;
+            left: 2px;
+            z-index: 400;
+        }
+
+        #highway407name {
+            position: absolute;
+            left: -90px;
+            width: 140px;
+            top: 65px;
+            transform: rotate(330deg);
+        }
+
+        #vaughanMetropolitanCentre {
+            width: 17px;
+            height: 17px;
+            background-color: #91bad6;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            border-radius: 75px 75px 75px 75px;
+            position: absolute;
+            top: 3px;
+            left: 2px;
+            z-index: 400;
+        }
+
+        #vaughanmetropolitancentrename {
+            position: absolute;
+            left: -183px;
+            width: 200px;
+            top: 55px;
+            transform: rotate(330deg);
+        }
+    </style>
+</head>
+
+<body>
+    <h1> TTC Interactive Map</h1>
+    <h3>Line 1: Yonge-University</h3>
+    <h6>Click any station below for directions</h6>
+
+    <div id="one">
+        <!-- yellow one circle -->
+    </div>
+
+    <div id="container">
+        <div id="line1KtoF">
+            <div id="finch">
+
+            </div>
+            <div id="finchname">
+                Finch
+            </div>
+            <div id="northYorkCentre">
+
+            </div>
+            <div id="northyorkcentrename">
+                North York Centre
+            </div>
+            <div id="sheppardYonge">
+
+            </div>
+            <div id="sheppardyongename">
+                Sheppard Yonge
+            </div>
+            <div id="yorkMills">
+
+            </div>
+            <div id="yorkmillsname">
+                York Mills
+            </div>
+            <div id="lawrence">
+
+            </div>
+            <div id="lawrencename">
+                Lawrence
+            </div>
+            <div id="eglinton">
+
+            </div>
+            <div id="eglintonname">
+                Eglinton
+            </div>
+            <div id="davisville">
+
+            </div>
+            <div id="davisvillename">
+                Davisville
+            </div>
+            <div id="stClair">
+
+            </div>
+            <div id="stclairname">
+                St Clair
+            </div>
+            <div id="summerhill">
+
+            </div>
+            <div id="summerhillname">
+                Summerhill
+            </div>
+            <div id="rosedale">
+
+            </div>
+            <div id="rosedalename">
+                Rosedale
+            </div>
+            <div id="bloorYonge">
+
+            </div>
+            <div id="blooryongename">
+                Bloor-Yonge
+            </div>
+            <div id="wellesley">
+
+            </div>
+            <div id="wellesleyname">
+                Wellesley
+            </div>
+            <div id="college">
+
+            </div>
+            <div id="collegename">
+                College
+            </div>
+            <div id="dundas">
+
+            </div>
+            <div id="dundasname">
+                Dundas
+            </div>
+            <div id="queen">
+
+            </div>
+            <div id="queenname">
+                Queen
+            </div>
+        </div>
+
+        <div id="line1SAtoK">
+            <div id="king">
+
+            </div>
+            <div id="kingname">
+                King
+            </div>
+            <div id="union">
+
+            </div>
+            <div id="unionname">
+                Union
+            </div>
+            <div id="stAndrew">
+
+            </div>
+            <div id="standrewname">
+                St Andrew
+            </div>
+        </div>
+
+        <div id="line1SGtoSA">
+            <div id="osgoode">
+
+            </div>
+            <div id="osgoodename">
+                Osgoode
+            </div>
+            <div id="stPatrick">
+
+            </div>
+            <div id="stpatrickname">
+                St Patrick
+            </div>
+            <div id="queensPark">
+
+            </div>
+            <div id="queensparkname">
+                Queen's Park
+            </div>
+            <div id="museum">
+
+            </div>
+            <div id="museumname">
+                Museum
+            </div>
+            <div id="stGeorge">
+
+            </div>
+            <div id="stgeorgename">
+                St George
+            </div>
+
+        </div>
+
+        <div id="line1StoSG">
+            <div id="spadina">
+
+            </div>
+
+            <div id="spadinaname">
+                Spadina
+            </div>
+        </div>
+
+        <div id="line1DtoS">
+            <div id="dupont">
+
+            </div>
+            <div id="dupontname">
+                Dupont
+            </div>
+        </div>
+
+        <div id="line1EWtoD">
+            <div id="stClairWest">
+
+            </div>
+            <div id="stclairwestname">
+                St Clair West
+            </div>
+            <div id="eglintonWest">
+
+            </div>
+            <div id="eglintonwestname">
+                Eglinton West
+            </div>
+        </div>
+
+        <div id="line1SWtoEW">
+            <div id="glencairn">
+
+            </div>
+            <div id="glencairnname">
+                Glencairn
+            </div>
+            <div id="lawrenceWest">
+
+            </div>
+            <div id="lawrencewestname">
+               Lawrence West
+            </div>
+            <div id="yorkdale">
+
+            </div>
+            <div id="yorkdalename">
+                Yorkdale
+            </div>
+            <div id="wilson">
+
+            </div>
+            <div id="wilsonname">
+                Wilson
+            </div>
+            <div id="sheppardWest">
+            </div>
+            <div id="sheppardwestname">
+                Sheppard West
+            </div>
+        </div>
+
+        <div id="line1407toSW">
+            <div id="downsviewPark">
+
+            </div>
+            <div id="downsviewparkname">
+                Downsview Park
+            </div>
+            <div id="finchWest">
+
+            </div>
+            <div id="finchwestname">
+                Finch West
+            </div>
+            <div id="yorkUniversity">
+
+            </div>
+            <div id="yorkuniversityname">
+                York University
+            </div>
+            <div id="pioneerVillage">
+
+            </div>
+            <div id="pioneervillagename">
+                Pioneer Village
+            </div>
+        </div>
+
+        <div id="line1Vto407">
+            <div id="highway407">
+            </div>
+            <div id="highway407name">
+                Highway 407
+            </div>
+            <div id="vaughanMetropolitanCentre">
+
+            </div>
+            <div id="vaughanmetropolitancentrename">
+                Vaughan Metropolitan Centre
+            </div>
+        </div>
+    </div>
+
+    <div id="infoDiv">
+        <button id="back">Back</button>
+    </div>
+
+    <script src="makeTextNode.js"></script>
+    <script src = "translate.js"></script>
+    <script src="stationInfo.js"></script>
+    <script src="showInfo.js"></script>
+    <script>
+        showInfo('finch');
+        showInfo('northYorkCentre');
+        showInfo('sheppardYonge');
+        showInfo('yorkMills');
+        showInfo('lawrence');
+        showInfo('eglinton');
+        showInfo('davisville');
+        showInfo('stClair');
+        showInfo('summerhill');
+        showInfo('rosedale');
+        showInfo('bloorYonge');
+        showInfo('wellesley');
+        showInfo('college');
+        showInfo('dundas');
+        showInfo('queen');
+        showInfo('king');
+        showInfo('union');
+        showInfo('stAndrew');
+        showInfo('osgoode');
+        showInfo('stPatrick');
+        showInfo('queensPark');
+        showInfo('museum');
+        showInfo('stGeorge');
+    </script>
+</body>
+</html>
